@@ -29,6 +29,7 @@ type Attachment struct {
 	Fields     []Fields `json:"fields"`
 }
 
+// Message - message type
 type Message struct {
 	Attachments []Attachment `json:"attachments"`
 }

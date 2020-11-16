@@ -8,21 +8,25 @@ import (
 )
 
 const (
+	// CONFIGFILE - the path of configfile
 	CONFIGFILE = "/etc/send2channel/config.yml"
 )
 
+// Message - message template from config file
 type Message struct {
 	Init    string `yaml:"init"`
 	Success string `yaml:"success"`
 	Fail    string `yaml:"fail"`
 }
 
+// Fallback - message fallback from config file
 type Fallback struct {
 	Init    string `yaml:"init"`
 	Success string `yaml:"success"`
 	Fail    string `yaml:"fail"`
 }
 
+// Color - color templete for messages
 type Color struct {
 	Init    string `yaml:"init"`
 	Success string `yaml:"success"`
